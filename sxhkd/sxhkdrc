@@ -1,0 +1,21 @@
+# simple x hotkey daemon
+
+# to know the key name use xev command (package: xorg-xev)
+
+super + + shift + f
+  firefox
+super + c
+  chromium
+super + s
+  /home/es/scripts/sshot
+super + Return
+  urxvtc
+XF86Search
+  htop
+Menu
+  dmenu_run
+super + p
+  dmenu_run
+super + shift + l
+  slock
+

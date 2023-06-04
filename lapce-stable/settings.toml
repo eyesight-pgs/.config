@@ -1,0 +1,12 @@
+
+[lapce]
+modal = true
+
+[editor]
+font-size = 14
+tab-width = 2
+render-whitespace = "trailing"
+show-indent-guide = false
+
+[core]
+modal = false

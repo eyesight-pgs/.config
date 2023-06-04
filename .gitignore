@@ -1,0 +1,90 @@
+# ignore these main folders
+/cef_user_data/
+/chromium/
+/composer/
+/Debauchee/
+/dconf/
+/draw.io/
+/filezilla/
+/firefoxprofileswitcher/
+/Google/AndroidStudio2020.3/
+/Google/AndroidStudio2021.2/
+/Google/AndroidStudio2022.1/
+/lapce-debug/*
+!/lapce-debug/keymaps.toml
+!/lapce-debug/settings.toml
+/lapce-stable/*
+!/lapce-stable/keymaps.toml
+!/lapce-stable/settings.toml
+/libreoffice/
+/Microsoft/Microsoft Teams/
+/Microsoft Teams - Preview/
+/mpd/*
+!/mpd/mpd.conf
+/mutt/
+/ncmpcpp/*
+!/ncmpcpp/config
+/neofetch/
+/nnn/
+/performous/
+/pgcli/
+/pgManage/
+/polybar.old/
+/pulse/
+/rest-client/
+/rncbc.org/
+/systemd/
+/teams/
+/uad/
+/winbar/
+/xfce4/
+/yarn/global/node_modules/
+/yarn/global/yarn.lock
+/karboncalligraphyrc
+/mimeapps.list
+/pavucontrol.ini
+/QtProject.conf
+
+
+
+# not sure
+/fontconfig/
+/gtk-2.0/
+/gtk-3.0/
+/kdeconnect/
+/lazygit/
+/libfm/
+/nimdow/
+/nitrogen/
+/pcmanfm/
+/Postman/
+/Thunar/
+/vifm/
+/viper4linux/
+/kritadisplayrc
+/kritarc
+
+
+
+# vscode
+## ignore all "content inside Code" not "Code" folder itself
+/Code/*
+## allow User folder
+!/Code/User/
+## ingore contents of User
+/Code/User/*
+## allow this file inside User folder
+!/Code/User/keybindings.json
+!/Code/User/settings.json
+
+
+# vscode-insiders
+## ignore all "content inside Code - Insiders" not "Code - Insiders" folder itself
+/Code - Insiders/*
+## allow User folder
+!/Code - Insiders/User/
+## ingore contents of User
+/Code - Insiders/User/*
+## allow this file inside User folder
+!/Code - Insiders/User/keybindings.json
+!/Code - Insiders/User/settings.json

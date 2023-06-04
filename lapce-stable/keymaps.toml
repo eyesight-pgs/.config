@@ -1,0 +1,60 @@
+
+[[keymaps]]
+command = "scroll_up"
+key = "Ctrl+arrowup"
+
+[[keymaps]]
+command = "-scroll_up"
+key = "Ctrl+PageUp"
+
+[[keymaps]]
+command = "scroll_down"
+key = "Ctrl+arrowdown"
+
+[[keymaps]]
+command = "-scroll_down"
+key = "Ctrl+PageDown"
+
+[[keymaps]]
+command = "toggle_panel_left_visual"
+key = "Ctrl+'"
+
+[[keymaps]]
+command = "toggle_terminal_visual"
+key = "Ctrl+`"
+
+[[keymaps]]
+command = "toggle_panel_focus"
+key = "Ctrl+j"
+
+[[keymaps]]
+command = "toggle_panel_right_visual"
+key = "Ctrl+b"
+
+[[keymaps]]
+command = "toggle_panel_bottom_visual"
+key = "Ctrl+j"
+
+[[keymaps]]
+command = "toggle_maximized_panel"
+key = "Ctrl+Shift+m"
+
+[[keymaps]]
+command = "toggle_source_control_focus"
+key = "Ctrl+Shift+g"
+
+[[keymaps]]
+command = "toggle_blockwise_visual_mode"
+key = "Ctrl+Shift+v"
+
+[[keymaps]]
+command = "open_keyboard_shortcuts_file"
+key = "Ctrl+k s"
+
+[[keymaps]]
+command = "open_logs_directory"
+key = "Ctrl+k l"
+
+[[keymaps]]
+command = "close_window_tab"
+key = "Ctrl+w"
