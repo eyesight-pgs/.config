@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
 # this is a simple config for herbstluftwm
+#
+# list of all herbstclient commands can be found here:
+#     https://github.com/herbstluftwm/herbstluftwm/blob/d6be492/src/main.cpp#L85C1-L85C1
+# 
 
 hc() {
     herbstclient "$@"
@@ -83,7 +87,7 @@ hc keybind $Mod-period use_index +1 --skip-visible
 hc keybind $Mod-comma  use_index -1 --skip-visible
 
 # switch to previous tag
-hc keybind $Mod-Alt use_previous_tag
+hc keybind $Mod-Tab use_previous
 
 # layouting
 hc keybind $Mod-r remove
