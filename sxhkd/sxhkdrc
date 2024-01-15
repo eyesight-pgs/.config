@@ -2,10 +2,12 @@
 
 # to know the key name use xev command (package: xorg-xev)
 
+# super + + shift + f
+#   firefox
 super + + shift + f
-  firefox
+  chromium --profile-directory="Profile 8"
 super + c
-  chromium
+  chromium --profile-directory="Profile 8"
 super + s
   /home/es/scripts/sshot
 super + Return
@@ -16,6 +18,14 @@ Menu
   dmenu_run
 super + p
   dmenu_run
-super + shift + l
+super + shift + control + l
   slock
+
+# volume control
+XF86AudioRaiseVolume
+  amixer -q sset Master 2%+
+XF86AudioLowerVolume
+  amixer -q sset Master 2%-
+
+
 
