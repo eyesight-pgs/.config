@@ -182,8 +182,23 @@
     "when": "editorColumnSelection && textInputFocus"
   },
   {
+    "key": "ctrl+alt+insert",
+    "command": "copyRelativeFilePath",
+    "when": "editorFocus"
+  },
+  {
     "key": "alt+j",
     "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "cursorEndSelect",
     "when": "textInputFocus"
   },
   {
@@ -203,6 +218,11 @@
   {
     "key": "alt+k",
     "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+k",
+    "command": "cursorUpSelect",
     "when": "textInputFocus"
   },
   {
@@ -302,7 +322,16 @@
     "command": "editor.action.transformToUppercase"
   },
   {
+    "key": "ctrl+k shift+alt+h",
+    "command": "editor.showIncomingCalls",
+    "when": "callHierarchyVisible && callHierarchyDirection == 'outgoingCalls'"
+  },
+  {
     "key": "ctrl+shift+numpad_add",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+shift+oem_period",
     "command": "explorer.newFile"
   },
   {
@@ -312,6 +341,10 @@
   {
     "key": "alt+`",
     "command": "extension.js-debug.createDebuggerTerminal"
+  },
+  {
+    "key": "alt+o",
+    "command": "git.openFile"
   },
   {
     "key": "ctrl+k ctrl+numpad_add",
@@ -350,6 +383,51 @@
     "key": "ctrl+alt+k",
     "command": "list.scrollUp",
     "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+1",
+    "command": "numberedBookmarks.jumpToBookmark1",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+2",
+    "command": "numberedBookmarks.jumpToBookmark2",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+3",
+    "command": "numberedBookmarks.jumpToBookmark3",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+4",
+    "command": "numberedBookmarks.jumpToBookmark4",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+5",
+    "command": "numberedBookmarks.jumpToBookmark5",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+6",
+    "command": "numberedBookmarks.jumpToBookmark6",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+7",
+    "command": "numberedBookmarks.jumpToBookmark7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+8",
+    "command": "numberedBookmarks.jumpToBookmark8",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+9",
+    "command": "numberedBookmarks.jumpToBookmark9",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+numpad1",
@@ -436,6 +514,10 @@
     "command": "selectForCompare"
   },
   {
+    "key": "ctrl+k ctrl+w",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
     "key": "alt+]",
     "command": "workbench.action.compareEditor.focusPrimarySide",
     "when": "textCompareEditorVisible"
@@ -454,7 +536,7 @@
     "command": "workbench.action.files.revealActiveFileInWindows"
   },
   {
-    "key": "alt+numpad_add",
+    "key": "alt+pausebreak",
     "command": "workbench.action.increaseViewSize"
   },
   {
@@ -503,6 +585,10 @@
     "key": "alt+t alt+s",
     "command": "workbench.action.toggleStatusbarVisibility"
   },
+  // {
+  //   "key": "ctrl+k ctrl+shift+numpad_add",
+  //   "command": "workbench.debug.viewlet.action.addWatchExpression"
+  // },
   {
     "key": "ctrl+alt+s",
     "command": "workbench.files.action.showActiveFileInExplorer"
@@ -606,6 +692,36 @@
     "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
   },
   {
+    "key": "ctrl+alt+right",
+    "command": "cursorWordPartRight"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "cursorWordPartStartLeft"
+  },
+  {
+    "key": "ctrl+shift+alt+left",
+    "command": "-cursorColumnSelectLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+left",
+    "command": "cursorWordPartLeftSelect"
+  },
+  {
+    "key": "ctrl+shift+alt+right",
+    "command": "-cursorColumnSelectRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+right",
+    "command": "cursorWordPartRightSelect"
+  },
+  {
+    "key": "ctrl+alt+backspace",
+    "command": "deleteWordPartLeft"
+  },
+  {
     "key": "alt+v",
     "command": "toggleVim"
   },
@@ -616,5 +732,60 @@
   {
     "key": "alt+pagedown",
     "command": "workbench.action.decreaseViewSize"
-  }
+  },
+  {
+    "key": "ctrl+k ctrl+shift+numpad_add",
+    "command": "workbench.debug.viewlet.action.addWatchExpression"
+  },
+  {
+    "key": "shift+alt+pausebreak",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "alt+numpad_add",
+    "command": "workbench.action.increaseViewSize"
+  },
+  // vim like key bindings
+  {
+    "key": "alt+0",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+4",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  { 
+    "key": "alt+shift+0",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+shift+4",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+p",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "list.expandSelectionDown",
+    "when": "listFocus && listSupportsMultiselect && !inputFocus"
+  },
+  {
+    "key": "shift+alt+k",
+    "command": "list.expandSelectionUp",
+    "when": "listFocus && listSupportsMultiselect && !inputFocus"
+  },
+  // {
+  //   "key": "ctrl+; q",
+  //   "command": "workbench.action.closeActiveEditor"
+  // },
+  // {
+  //   "key": "ctrl+; w",
+  //   "command": "workbench.action.files.save"
+  // },
 ]
