@@ -1,16 +1,27 @@
 {
-  "CI.ignoreSymbols": true,
-  "Lua.telemetry.enable": false,
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
   "cSpell.userWords": [
+    "backpressure",
+    "bcrypt",
+    "bson",
+    "classpath",
     "datatable",
     "ifnull",
     "joinee",
     "kolkata",
     "luxon",
-    "Stallman"
+    "middlewares",
+    "mkdir",
+    "neovim",
+    "nvim",
+    "respawn",
+    "Stallman",
+    "typeorm",
+    "updation",
+    "upgrader",
+    "zipcode"
   ],
   "debug.inlineValues": "on",
   "debug.javascript.terminalOptions": {
@@ -43,48 +54,73 @@
   "editor.minimap.size": "fill",
   "editor.multiCursorLimit": 100000,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "other": "off",
+    "strings": "off"
+  },
+  "editor.rename.enablePreview": false,
   "editor.renderWhitespace": "trailing",
   "editor.rulers": [
     80
   ],
+  "editor.stickyScroll.scrollWithEditor": false,
+  "editor.suggestOnTriggerCharacters": false,
   "editor.suggest.showStatusBar": true,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword.control.flow.ts",
+          ],
+          "settings": {
+            "fontStyle": "bold underline"
+          }
+        }
+      ]
+    }
+  },
   "editor.trimAutoWhitespace": false,
   "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "Jenkinsfile": "groovy"
   },
   "files.eol": "\n",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
   "files.hotExit": "off",
   "files.restoreUndoStack": false,
   "files.simpleDialog.enable": true,
   "files.trimTrailingWhitespace": false,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "intelephense.environment.phpVersion": "7.4.7",
-  "intelephense.telemetry.enabled": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
   "json.maxItemsComputed": 50000,
   "php.validate.run": "onType",
   "rest-client.disableHighlightResonseBodyForLargeResponse": false,
   "rest-client.enableCustomVariableReferencesCodeLens": false,
+  "rest-client.enableSendRequestCodeLens": true, // what is this?
   "rest-client.enableTelemetry": false,
-  "sash.hoverBorder": "#f00",
   "search.searchEditor.defaultNumberOfContextLines": 0,
   "search.searchEditor.reusePriorSearchConfiguration": true,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "cSpell.diagnosticLevel": "Hint",
   "telemetry.telemetryLevel": "off",
-  "terminal.external.windowsExec": "E:/apps/pwsh/pwsh.exe",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.scrollback": 100000,
-  "terminal.integrated.shell.linux": "bash",
-  "terminal.integrated.shell.windows": "G:/apps/pwsh/pwsh.exe",
   "terminal.integrated.useWslProfiles": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.insertModeKeyBindings": [
@@ -140,17 +176,24 @@
       ]
     }
   ],
+  // "vscode-neovim.logLevel": "debug",
+  // "vscode-neovim.neovimExecutablePaths.darwin": "",
+  // "vscode-neovim.neovimExecutablePaths.linux": "/path/to/nvim",
+  // "vscode-neovim.neovimExecutablePaths.win32": "",
+  // "vscode-neovim.neovimInitVimPaths.linux": "/path/to/init.vim",
+  // "vscode-neovim.useWSL": true,
   "window.commandCenter": false,
   "window.customMenuBarAltFocus": false,
+  "window.density.editorTabHeight": "compact",
   "window.dialogStyle": "custom",
   "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "compact",
   "window.restoreWindows": "none",
-  "window.title": "⛈ ${rootName} ⛈",
+  "window.title": "⛈ ${dirty} ${rootName} ⛈",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
-    "[Default Dark+]": {
+    "[Default Dark Modern]": {
       "activityBar.activeBackground": "#111111",
       "activityBar.background": "#000000",
       "activityBar.inactiveForeground": "#333333",
@@ -170,13 +213,12 @@
       "minimap.errorHighlight": "#000000",
       "statusBar.background": "#111111",
       "statusBar.noFolderBackground": "#110011",
-      "tab.activeBackground": "#151515",
+      "tab.activeBackground": "#eeeeee",
       "tab.activeBorder": "#ffffff",
       "tab.activeBorderTop": "#ffffff",
-      "tab.activeForeground": "#ffffff",
+      "tab.activeForeground": "#000000",
       "tab.border": "#000000",
-      "tab.hoverBackground": "#eeeeee",
-      "tab.hoverForeground": "#000000",
+      "tab.hoverBackground": "#aa5050",
       "tab.inactiveBackground": "#111111",
       "tab.inactiveForeground": "#eeeeee",
       "titleBar.activeBackground": "#000000",
@@ -193,7 +235,9 @@
     "editorBracketPairGuide.activeBackground3": "#09ff00",
     "editorBracketPairGuide.activeBackground4": "#001aff",
     "editorBracketPairGuide.activeBackground5": "#ff00b3",
-    "editorBracketPairGuide.activeBackground6": "#ffffff"
+    "editorBracketPairGuide.activeBackground6": "#ffffff",
+    "editorRuler.foreground": "#222",
+    "terminal.findMatchBorder": "#ffff00"
   },
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
@@ -204,10 +248,13 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.layoutControl.type": "toggles",
+  "workbench.layoutControl.enabled": false,
+  "workbench.layoutControl.type": "menu",
+  "workbench.sash.hoverDelay": 0,
   "workbench.sash.size": 10,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.hideLineNumbers": false,
