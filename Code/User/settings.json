@@ -1,8 +1,9 @@
 {
+  "CI.ignoreSymbols": true,
+  "Lua.telemetry.enable": false,
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
-  "CI.ignoreSymbols": true,
   "cSpell.userWords": [
     "datatable",
     "ifnull",
@@ -12,34 +13,43 @@
     "Stallman"
   ],
   "debug.inlineValues": "on",
+  "debug.javascript.terminalOptions": {
+    "skipFiles": [
+      "<node_internals>/**"
+    ]
+  },
   "debug.toolBarLocation": "docked",
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
   "diffEditor.maxFileSize": 0,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.guides.indentation": false,
   "editor.columnSelection": false,
   "editor.cursorWidth": 2,
   "editor.find.cursorMoveOnType": true,
   "editor.fontFamily": "'FiraCode Nerd Font Mono','Fira Code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.indentation": false,
   "editor.insertSpaces": false,
+  "editor.largeFileOptimizations": false,
   "editor.maxTokenizationLineLength": 200000,
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 150,
   "editor.minimap.renderCharacters": true,
   "editor.minimap.scale": 3,
   "editor.minimap.showSlider": "always",
   "editor.minimap.side": "right",
   "editor.minimap.size": "fill",
+  "editor.multiCursorLimit": 100000,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "trailing",
   "editor.rulers": [
     80
   ],
-  "editor.tabSize": 2,
   "editor.suggest.showStatusBar": true,
   "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
   "editor.trimAutoWhitespace": false,
   "explorer.autoReveal": false,
   "extensions.ignoreRecommendations": true,
@@ -51,12 +61,12 @@
   "files.restoreUndoStack": false,
   "files.simpleDialog.enable": true,
   "files.trimTrailingWhitespace": false,
-  "json.maxItemsComputed": 50000,
   "git.autofetch": true,
   "git.confirmSync": false,
   "intelephense.environment.phpVersion": "7.4.7",
   "intelephense.telemetry.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.maxItemsComputed": 50000,
   "php.validate.run": "onType",
   "rest-client.disableHighlightResonseBodyForLargeResponse": false,
   "rest-client.enableCustomVariableReferencesCodeLens": false,
@@ -73,53 +83,104 @@
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.scrollback": 100000,
-  "terminal.integrated.useWslProfiles": true,
   "terminal.integrated.shell.linux": "bash",
   "terminal.integrated.shell.windows": "G:/apps/pwsh/pwsh.exe",
+  "terminal.integrated.useWslProfiles": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.insertModeKeyBindings": [
+    {
+      "after": [
+        "<esc>"
+      ],
+      "before": [
+        "<leader>",
+        "a"
+      ]
+    }
+  ],
+  "vim.leader": ";",
+  "vim.normalModeKeyBindings": [
+    {
+      "after": [
+        "<esc>"
+      ],
+      "before": [
+        "<leader>",
+        "a"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    }
+  ],
   "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "after": [
+        "<esc>"
+      ],
+      "before": [
+        "<leader>",
+        "a"
+      ]
+    }
+  ],
+  "window.commandCenter": false,
+  "window.customMenuBarAltFocus": false,
   "window.dialogStyle": "custom",
+  "window.enableMenuBarMnemonics": false,
   "window.menuBarVisibility": "compact",
   "window.restoreWindows": "none",
   "window.title": "⛈ ${rootName} ⛈",
   "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
-      "editor.background": "#000000",
       "activityBar.activeBackground": "#111111",
       "activityBar.background": "#000000",
       "activityBar.inactiveForeground": "#333333",
       "activityBarBadge.background": "#333333",
       "activityBarBadge.foreground": "#bbbbbb",
+      "editor.background": "#000000",
       "editor.lineHighlightBackground": "#ffffff10",
       "editor.lineHighlightBorder": "#ffffff00",
       "editorGroup.border": "#777777",
       "editorGroup.emptyBackground": "#aaaaaa",
-      "editorGroupHeader.tabsBackground": "#0e000e",
-      // "editorGroupHeader.tabsBorder": "#222222",
       "editorGroupHeader.border": "#222222",
-      // "editorGutter.background": "#000000",
+      "editorGroupHeader.tabsBackground": "#0e000e",
       "editorLineNumber.foreground": "#666666",
       "editorPane.background": "#110011",
       "menu.background": "#070707",
-      // "menubar.selectionBackground": "#ffffff",
-      // "menubar.selectionForeground": "#000000",
       "minimap.background": "#131010",
       "minimap.errorHighlight": "#000000",
       "statusBar.background": "#111111",
       "statusBar.noFolderBackground": "#110011",
       "tab.activeBackground": "#151515",
+      "tab.activeBorder": "#ffffff",
+      "tab.activeBorderTop": "#ffffff",
       "tab.activeForeground": "#ffffff",
+      "tab.border": "#000000",
       "tab.hoverBackground": "#eeeeee",
       "tab.hoverForeground": "#000000",
       "tab.inactiveBackground": "#111111",
       "tab.inactiveForeground": "#eeeeee",
-      "tab.border": "#000000",
-      "tab.activeBorder": "#ffffff",
-      "tab.activeBorderTop": "#ffffff",
       "titleBar.activeBackground": "#000000",
-      "titleBar.inactiveBackground": "#110011",
-      // "titleBar.inactiveForeground": "#ffffff",
+      "titleBar.inactiveBackground": "#110011"
     },
     "editorBracketHighlight.foreground1": "#ff9900",
     "editorBracketHighlight.foreground2": "#ffd900",
@@ -132,63 +193,24 @@
     "editorBracketPairGuide.activeBackground3": "#09ff00",
     "editorBracketPairGuide.activeBackground4": "#001aff",
     "editorBracketPairGuide.activeBackground5": "#ff00b3",
-    "editorBracketPairGuide.activeBackground6": "#ffffff",
+    "editorBracketPairGuide.activeBackground6": "#ffffff"
   },
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.editor.focusRecentEditorAfterClose": true,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.type": "toggles",
   "workbench.sash.size": 10,
   "workbench.sideBar.location": "right",
-  "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "always",
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": false,
-  "zenMode.hideTabs": false,
-  "workbench.layoutControl.type": "toggles",
-  "window.enableMenuBarMnemonics": false,
-  "window.customMenuBarAltFocus": false,
-  "debug.javascript.terminalOptions": {
-    "skipFiles": [
-      "<node_internals>/**"
-    ]
-  },
-  "Lua.telemetry.enable": false,
-  "editor.minimap.enabled": false,
-  "vim.leader": ";",
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<leader>", "a"],
-      "after": ["<esc>"]
-    },
-    {
-      "before": ["<leader>", "w"],
-      "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": ["<leader>", "q"],
-      "commands": ["workbench.action.closeActiveEditor"]
-    },
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["<leader>", "a"],
-      "after": ["<esc>"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["<leader>", "a"],
-      "after": ["<esc>"]
-    }
-  ],
-  "editor.largeFileOptimizations": false,
-  "window.zoomLevel": 1,
-  "editor.multiCursorLimit": 100000,
-  "diffEditor.ignoreTrimWhitespace": false
+  "zenMode.showTabs": "none"
 }

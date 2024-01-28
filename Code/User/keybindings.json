@@ -608,5 +608,13 @@
   {
     "key": "alt+v",
     "command": "toggleVim"
+  },
+  {
+    "key": "alt+pageup",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "alt+pagedown",
+    "command": "workbench.action.decreaseViewSize"
   }
 ]
