@@ -95,6 +95,10 @@ alias ls='ls --color=auto' \
   real-htop='htop' \
   htop='bpytop'
 
+## editor for fc command
+# if `FCEDIT` is not set, `EDITOR` is used
+# export FCEDIT=micro
+
 # zoxide (smarter cd)
 eval "$(zoxide init bash)"
 
