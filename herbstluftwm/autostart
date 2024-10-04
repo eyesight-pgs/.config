@@ -238,7 +238,8 @@ done
 
 
 
-
+# enable natural scrolling
+xinput set-prop "$(xinput list --name-only | grep -i 'touchpad')" "libinput Natural Scrolling Enabled" 1
 
 
 
