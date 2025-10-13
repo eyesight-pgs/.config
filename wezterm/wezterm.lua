@@ -18,6 +18,8 @@ config.window_background_opacity = 0.8
 config.keys = {
 	{ key = "Enter", mods = "CTRL|SHIFT", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
 	{ key = '"', mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+	{ key = "=", mods = "CTRL", action = wezterm.action.IncreaseFontSize },
+	{ key = "-", mods = "CTRL", action = wezterm.action.DecreaseFontSize },
 }
 
 -- The set of schemes that we like and want to put in our rotation
