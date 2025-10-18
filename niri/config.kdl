@@ -44,7 +44,7 @@ layout {
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
         proportion 0.5
-        proportion 0.7
+        proportion 0.85
 
         // Fixed sets the width in logical pixels exactly.
         // fixed 1920
@@ -136,6 +136,7 @@ spawn-at-startup "xwayland-satellite"
 spawn-at-startup "/usr/lib/xdg-desktop-portal"
 spawn-at-startup "/usr/lib/xdg-desktop-portal-wlr"
 spawn-at-startup "swaybg" "-i" "/home/es/wallpapers/spiderman-1.jpg"
+// spawn-at-startup "/home/es/scripts/kill-firefox-if-ram-high.sh"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -368,6 +369,9 @@ binds {
     Mod+7 { focus-workspace 7; }
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
+    Mod+0 { focus-workspace 10; }
+    Mod+a { focus-workspace 11; }
+    Mod+b { focus-workspace 12; }
     Mod+Shift+1 { move-column-to-workspace 1; }
     Mod+Shift+2 { move-column-to-workspace 2; }
     Mod+Shift+3 { move-column-to-workspace 3; }
@@ -377,6 +381,9 @@ binds {
     Mod+Shift+7 { move-column-to-workspace 7; }
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
+    Mod+Shift+0 { move-column-to-workspace 10; }
+    Mod+Shift+a { move-column-to-workspace 11; }
+    Mod+Shift+b { move-column-to-workspace 12; }
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
@@ -446,7 +453,7 @@ binds {
     // Mod+Shift+Space { switch-layout "prev"; }
 
     Mod+Print {
-       spawn-sh "flameshot gui"
+       spawn-sh "XDG_CURRENT_DESKTOP=sway && flameshot gui";
     }
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
