@@ -7,13 +7,14 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "icon_theme": "Zed (Default)",
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "Rosé Pine",
     "dark": "One Dark"
   },
   "ui_font_family": "JetBrains Mono",
-  "vim_mode": true
+  "vim_mode": false
 }

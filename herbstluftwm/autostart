@@ -61,7 +61,7 @@ hc keybind $Mod-o       split   right   0.5
 hc keybind $Mod-Control-space split explode
 
 # resizing frames and floating clients
-resizestep=0.02
+resizestep=0.10
 hc keybind $Mod-Control-h       resize left +$resizestep
 hc keybind $Mod-Control-j       resize down +$resizestep
 hc keybind $Mod-Control-k       resize up +$resizestep
@@ -224,19 +224,15 @@ fi
 
 
 
-# find the panel
-# panel=polybar
-# [ -x "$panel" ] || panel="$HOME/.config/herbstluftwm/panel.sh"
-# for monitor in $(hc list_monitors | cut -d: -f1) ; do
-#     # start it on each monitor
-#     # "$panel" "$monitor" &
-#     "MONITOR=$monitor polybar -r bar1 &"
-# done
+# kill existing bars
+killall -q polybar
 
+# wait until polybar dies
+while pgrep -u $UID -x polybar >/dev/null; do sleep 0.5; done
 
-for monitor in $(polybar -m | cut -d: -f1) ; do
-  # start it on each monitor
-  MONITOR=$monitor polybar -r bar1 &
+# launch one per monitor
+for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+  MONITOR=$m polybar --reload bar1 &
 done
 
 
@@ -246,8 +242,12 @@ xinput set-prop "$(xinput list --name-only | grep -i 'touchpad')" "libinput Natu
 
 
 
-start &
-utxvc &
+# start &
+# utxvc &
+
+feh --bg-scale ~/wallpapers/windows-11-gray.png
+xset r rate 250 40
+
 
 
 

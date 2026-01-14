@@ -221,5 +221,6 @@
       ]
     }
   ],
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.views.formats.commits.label": "${agoOrDateShort} | ${author} || ${message}"
 }

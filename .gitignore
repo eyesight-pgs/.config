@@ -113,8 +113,11 @@ gtk-4.0/
 kdedefaults/
 KDE/
 libaccounts-glib/
+menus/
 micro/
+nushell/
 Ladybird/
+session/
 vlc/
 baloofileinformationrc
 baloofilerc

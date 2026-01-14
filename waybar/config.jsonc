@@ -7,6 +7,8 @@
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
+    "niri/workspaces",
+    "cffi/niri-taskbar",
     "hyprland/workspaces",
     "hyprland/mode",
     "hyprland/scratchpad",
@@ -32,6 +34,9 @@
     "tray",
     "clock",
   ],
+  "cffi/niri-taskbar": {
+    "module_path": "/home/es/.local/lib/libniri_taskbar.so",
+  },
   // Modules configuration
   "hyprland/workspaces": {
     // docs: https://github.com/Alexays/Waybar/wiki/Module:-Hyprland#workspaces
